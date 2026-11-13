@@ -2,126 +2,132 @@
 
 const scenes = [
   {
-    theme: "self-awareness",
-    setting: "الاستعداد لعرض بحثي",
-    title: "قبل حذف الشريحة",
-    story: "عرض بحثكِ غدًا أمام أستاذة المقرر والطالبات. خلال مراجعة الشرائح مساءً، بدأتِ تنتقدين كل جملة وتفكرين في حذف جزء أعددتِه بعناية.",
-    cue: "«أحسّ إن هالجزء مو كافي.»",
-    question: "ما الخطوة الأولى لفهم سبب رغبتكِ في الحذف؟",
-    skill: "الوعي الذاتي",
-    takeaway: "سمّي الشعور ولاحظي كيف يؤثر في تقييمكِ لعملكِ.",
-    options: [
+    "contextTag": "السياق: الاستعداد لعرض بحثي",
+    "signalTag": "المؤشر: أثر القلق على التفكير",
+    "story": "تستعدين لتقديم عرض بحثي مهم غدًا أمام أستاذة المقرر والطالبات. أثناء مراجعتكِ للشرائح مساءً، لاحظتِ أنكِ متوترة وتنتقدين كل جملة كتبتِها، وبدأتِ تفكرين في حذف جزء كامل أعددتِه بعناية بحجة أنه \"غير كافٍ\".",
+    "question": "أي تصرف يعكس «الوعي الذاتي» في هذه اللحظة؟",
+    "bestRationale": "يركّز «الوعي الذاتي» على قراءة الداخل: إدراك الشعور القائم، وكشف كيف يغيّر نظرتنا للأمور، وموازنة ذلك بمعرفة نقاط قوتنا الفعلية دون التسرع في حذف جهد متقن.",
+    "alternativesNote": "تشتيت الانتباه يؤجل مواجهة الفكرة دون فهم سببها، بينما طلب التطمين الخارجي يبحث عن حكم الآخرين بدل تمييز أثر القلق الشخصي.",
+    "options": [
       {
-        action: "آخذ استراحة قصيرة وأعود لقراءة الجزء بعد أن يخف التوتر.",
-        label: "الاستراحة ثم المراجعة",
-        effect: "قد تخفّ حدة التوتر بعد الاستراحة، لكن سبب حكمكِ على الجزء قد يبقى غير واضح.",
-        compare: "تخفف التوتر وتؤجل فحص أثره في الحكم على الجزء."
+        "key": "أ",
+        "text": "إغلاق الملف فورًا والانتقال لمذاكرة مادة أخرى لتشتيت الانتباه عن هذا الشعور حتى يهدأ.",
+        "feedback": "أخذ استراحة خيار شائع لتخفيف التوتر مؤقتًا، لكنه يتجاوز ملاحظة الشعور نفسه؛ فالوعي الذاتي يبدأ بالتعرّف على الانفعال وفهم أثره على أفكاركِ قبل الابتعاد."
       },
       {
-        action: "أسمّي قلقي من التقييم وأسأل نفسي كيف غيّر حكمي على الجزء.",
-        label: "فهم أثر القلق",
-        effect: "تنتبهين إلى أن القلق قد يجعل نقدكِ أشد من المعتاد، فتراجعين الجزء وفق ما يدعمه في البحث.",
-        compare: "يكشف صلة القلق بالنقد المفاجئ ويهيئ لمراجعة الجزء بهدوء."
+        "key": "ب",
+        "text": "التوقف قليلًا لتسمية شعور القلق من التقييم، وإدراك أنه السبب في تشكيككِ بجودة عملكِ رغم إتقانكِ للبحث.",
+        "feedback": "اختيار دقيق؛ هنا طبّقتِ جوهر الوعي الذاتي بتحديد شعور القلق، وفهم تأثيره المباشر في أفكاركِ التشكيكية، مع استحضار نقطة قوتكِ الحقيقية وهي إتقان البحث."
       },
       {
-        action: "أرسل الجزء لزميلة وأطلب منها تحديد ما يحتاج إلى مراجعة.",
-        label: "طلب رأي زميلة",
-        effect: "قد تكشف ملاحظتها خللًا محددًا. يبقى سؤال مختلف: ما الذي جعلكِ تفكرين في حذف الجزء كله؟",
-        compare: "يفيد في تحرير الشرائح، ويعطيكِ رأيًا خارجيًا قبل فحص حكمكِ."
+        "key": "ج",
+        "text": "إرسال الشرائح لصديقة في الشعبة وسؤالها إن كان العرض يبدو ضعيفًا ويحتاج إلى إعادة كتابة.",
+        "feedback": "طلب رأي الزميلات مفيد أحيانًا، لكن اللجوء الفوري للتطمين الخارجي قبل إدراك مصدر التوتر الداخلي يعني الاعتماد على الآخرين لتقييم جهد تعرفين مسبقًا أنكِ أتقنتِه."
       }
     ],
-    best: 1
+    "best": 1,
+    "pillar": {
+      "id": "self-awareness",
+      "title": "الوعي الذاتي",
+      "definition": "القدرة على إدراك المرء مشاعره وتأثيرها في أفكاره وسلوكياته ومعرفة نقاط قوته وضعفه.",
+      "takeaway": "تسمية الشعور لحظة حدوثه تمنع القلق العابر من تشويه تقييمنا لقدراتنا."
+    }
   },
   {
-    theme: "social-awareness",
-    setting: "اجتماع فريق عن بُعد",
-    title: "حين تغيّرت نبرتها",
-    story: "أثناء مناقشة خطة البحث، اكتفت زميلتكِ، التي عادةً تشارك بحماس، بردود قصيرة. بدت نبرتها متعبة، ولم تذكر أن لديها مشكلة. ما زال الفريق يوزع المهام.",
-    cue: "«اللي تشوفونه مناسب.»",
-    question: "كيف تراعين تغيّر مشاركتها قبل تثبيت المهام؟",
-    skill: "الوعي الاجتماعي",
-    takeaway: "التقطي الإشارات واسألي بلطف للتحقق مما قد تعنيه.",
-    options: [
+    "contextTag": "السياق: تسليم تكليف جماعي",
+    "signalTag": "المؤشر: ضغط الوقت والاندفاع",
+    "story": "قبل موعد تسليم التكليف الجماعي بساعتين، اعتذرت إحدى زميلات المجموعة لظرفٍ طارئ، وبقي الجزء الخاص بها غير مكتمل. شعرتِ بضيقٍ حاد وضغطٍ مفاجئ لأن درجتكِ مرتبطة بالتسليم في الوقت المحدد.",
+    "question": "أي استجابة تُجسّد «إدارة الذات» بصورة أدق؟",
+    "bestRationale": "تقوم «إدارة الذات» على شقّين متكاملين: ضبط الانفعال الاندفاعي بطريقة صحية، والمرونة في التكيّف مع الظروف الطارئة لتحقيق الهدف بأفضل صورة ممكنة.",
+    "alternativesNote": "رسالة العتاب تمثّل استجابة اندفاعية غير مثمرة، بينما الاكتفاء بإخلاء المسؤولية يفتقر لمرونة التكيّف وحل المشكلة في الوقت المتاح.",
+    "options": [
       {
-        action: "أستكمل النقاش وأسألها على الخاص إن كانت تفضّل وقتًا قبل تأكيد دورها.",
-        label: "سؤال على الخاص",
-        effect: "تعطينها فرصة لتوضح ما تحتاجه وتحفظين خصوصيتها. تغيّر النبرة يدعو للسؤال، وقد تكون له أسباب مختلفة.",
-        compare: "يراعي الإشارة ويمنحها فرصة لتحديد حاجتها بنفسها."
+        "key": "أ",
+        "text": "إرسال رسالة عتاب حادة في مجموعة الفريق توضّح حجم الإرباك الذي سبّبه هذا التأخير المفاجئ.",
+        "feedback": "الشعور بالضيق مفهوم تحت ضغط الوقت، لكن التعبير المندفع عنه في تلك اللحظة يستهلك الوقت المتبقي ويزيد التوتر دون أن يحل مشكلة التسليم."
       },
       {
-        action: "أخفف عنها المهمة في هذه الجولة وأوضح للفريق أن التوزيع قابل للمراجعة.",
-        label: "تخفيف المهمة",
-        effect: "قد يفيدها تخفيف المهمة لو كانت مرهقة، وقد يحرمها من دور تريده إذا كان سبب قلة مشاركتها مختلفًا.",
-        compare: "يخفف العبء بناءً على قراءة قد لا تعكس ما تريده."
+        "key": "ب",
+        "text": "تسليم الملف ناقصًا كما هو مع كتابة ملاحظة للأستاذة تُخلي مسؤوليتكِ عن الجزء غير المكتمل.",
+        "feedback": "توثيق المسؤولية قد يبدو حلًا وقائيًا، لكنه يميل إلى الجمود أمام ظرف طارئ بدل التكيّف المرن والبحث عن معالجة تحفظ جودة العمل الجماعي."
       },
       {
-        action: "أبقي التوزيع كما هو، وأمنح الجميع وقتًا للتعليق قبل تثبيته.",
-        label: "فتح المجال للجميع",
-        effect: "تضمنين فرصة متساوية للتعليق، لكن الزميلة قد تفضّل توضيح احتياجها بعيدًا عن المجموعة.",
-        compare: "يفتح باب التعليق وتبقى الخصوصية عاملًا في قدرتها على الكلام."
+        "key": "ج",
+        "text": "أخذ نفسٍ عميق لتهدئة التوتر، ثم إعادة ترتيب الأولويات لتغطية النقاط الأساسية في الجزء المتبقي قبل التسليم.",
+        "feedback": "اختيار متّزن؛ يجمع بين السيطرة الصحية على الاندفاع العاطفي الأول، والتكيّف العملي السريع مع ظرف لم يكن في الحسبان."
       }
     ],
-    best: 0
+    "best": 2,
+    "pillar": {
+      "id": "self-management",
+      "title": "إدارة الذات",
+      "definition": "القدرة على السيطرة على المشاعر والسلوكيات الاندفاعية والمتهورة بطريقة صحية والتكيف مع الظروف الحياتية.",
+      "takeaway": "تهدئة الاندفاع الأول تفتح المجال للتكيّف العملي مع الظروف المفاجئة."
+    }
   },
   {
-    theme: "self-management",
-    setting: "قبل التسليم بساعتين",
-    title: "جزء لم يكتمل",
-    story: "اعتذرت زميلتكِ عن إكمال جزئها من التكليف الجماعي لظرف طارئ. بقيت ساعتان، والجزء الناقص له نقاط أساسية يمكن تغطيتها في الوقت المتاح. شعرتِ بالضيق وبدأتِ تكتبين رسالة عتاب.",
-    question: "كيف تتعاملين مع اندفاعكِ وتستفيدين من الوقت؟",
-    skill: "إدارة الذات",
-    takeaway: "خذي وقفة قصيرة ثم عدّلي خطتكِ وفق ما يمكن إنجازه.",
-    options: [
+    "contextTag": "السياق: اجتماع فريق عن بُعد",
+    "signalTag": "المؤشر: إشارات غير لفظية",
+    "story": "خلال اجتماع عبر الإنترنت لمناقشة خطة البحث، لاحظتِ أن زميلتكِ التي عادةً ما تشارك بحماس، تكتفي اليوم بعبارات مقتضبة مثل \"اللي تشوفونه مناسب\"، وتبدو نبرة صوتها متعبة وغير مركّزة، دون أن تذكر وجود أي مشكلة.",
+    "question": "ما التصرف الذي يُظهر «الوعي الاجتماعي» في هذا الموقف؟",
+    "bestRationale": "يتمحور «الوعي الاجتماعي» حول قراءة ما وراء الكلمات: التقاط الإشارات الصوتية والسلوكية التي تدل على مشاعر الآخرين وحاجاتهم حتى حين لا يُفصحون عنها.",
+    "alternativesNote": "الاستمرار في التوزيع يتجاوز الإشارة العاطفية تمامًا، بينما السؤال المباشر أمام الجميع يغفل حاجة الطرف الآخر للخصوصية والرفق.",
+    "options": [
       {
-        action: "أبدأ بتغطية الجزء وحدي فورًا، وأطلب من الفريق مراجعة ما أكتبه لاحقًا.",
-        label: "العمل الفردي فورًا",
-        effect: "تبدئين العمل بسرعة، لكن تحمل المهمة وحدكِ قد يزيد الضغط وتضيق معه فرصة توزيع الجهد.",
-        compare: "يبدأ الإنجاز سريعًا وقد يحمّلكِ عملًا يستطيع الفريق تقاسمه."
+        "key": "أ",
+        "text": "الانتباه لتغيّر نبرتها وقلة تفاعلها بوصفهما إشارة لإرهاق أو انشغال، ومراعاة ذلك بتخفيف الضغط عنها أثناء الاجتماع.",
+        "feedback": "اختيار يعكس حسًا اجتماعيًا ناضجًا؛ فقد التقطتِ الإشارات غير المباشرة في نبرة الصوت وأسلوب المشاركة، وتصرفتِ بمراعاة دون إحراجها."
       },
       {
-        action: "أراسل الأستاذة لطلب تمديد، وأطلب من الفريق مراجعة الأجزاء الجاهزة.",
-        label: "طلب تمديد",
-        effect: "قد يخف الضغط إذا وافقت الأستاذة، لكن مراجعة المكتمل تترك الجزء الناقص معلقًا حتى يصل الرد.",
-        compare: "يعتمد على رد خارجي، مع أن النقاط الأساسية قابلة للإنجاز في الوقت المتاح."
+        "key": "ب",
+        "text": "تقدير موافقتها السريعة واستثمار الوقت في توزيع المهام المتبقية حتى ينتهي الاجتماع بسرعة.",
+        "feedback": "الحرص على إنجاز الاجتماع سريعًا أمر عملي، لكن الأخذ بظاهر الموافقة هنا يتجاهل الإشارة الواضحة إلى أنها تمر بظرف أو إرهاق يمنعها من المشاركة المعتادة."
       },
       {
-        action: "أتمهّل قبل إرسال الرد، ثم أتفق مع الفريق على تغطية النقاط الأساسية.",
-        label: "وقفة وترتيب للأولويات",
-        effect: "تتيح لكِ الوقفة ضبط نبرة الرد. ويساعد تقسيم النقاط الأساسية على تكييف الخطة مع الساعتين المتبقيتين.",
-        compare: "يجمع بين ضبط الاندفاع وتغيير الخطة بما يناسب الوقت المتاح."
+        "key": "ج",
+        "text": "سؤالها مباشرة أمام بقية المجموعة عمّا إذا كانت منزعجة من توزيع المهام أو غير راضية عن الخطة.",
+        "feedback": "المبادرة بالسؤال نابعة من الاهتمام، لكن طرحه علنًا أمام المجموعة قد يضعها في موقف محرج إذا كانت تمر بظرف خاص لا ترغب في كشفه للجميع."
       }
     ],
-    best: 2
+    "best": 0,
+    "pillar": {
+      "id": "social-awareness",
+      "title": "الوعي الاجتماعي",
+      "definition": "القدرة على فهم مشاعر الآخرين وحاجاتهم وهمومهم والتقاط إشارات تشير إلى هذه المشاعر.",
+      "takeaway": "الانتباه لتغيّر نبرة الصوت أو قلة التفاعل يكشف حاجات لا يُصرّح بها الآخرون."
+    }
   },
   {
-    theme: "relationship-management",
-    setting: "عمل متكرر مع صديقة",
-    title: "موعد يتأخر كل مرة",
-    story: "تأخرت صديقتكِ في إرسال أجزائها في أكثر من مقرر، فبقي تنسيق العمل عليكِ في آخر لحظة. أمامكما أسبوع قبل التكليف التالي، وترغبين في معالجة تكرار التأخير.",
-    question: "كيف تحمين سير العمل وعلاقتكما في الوقت نفسه؟",
-    skill: "إدارة العلاقات",
-    takeaway: "وضّحي أثر المشكلة واتّفقي مع الطرف الآخر على خطوة قابلة للمتابعة.",
-    options: [
+    "contextTag": "السياق: تنسيق مستمر مع صديقة",
+    "signalTag": "المؤشر: الحوار والتأثير البنّاء",
+    "story": "تكرر تأخر زميلتكِ وصديقتكِ المقرّبة في إرسال أجزائها في أكثر من مقرر، مما يضعكِ في حرج مستمر عند التنسيق. ترغبين في معالجة الأمر بوضوح يحفظ علاقتكما الجيدة ويدفعها للالتزام مستقبلًا.",
+    "question": "أي أسلوب حواري يعبّر عن «إدارة العلاقات» بفاعلية؟",
+    "bestRationale": "تتجلّى «إدارة العلاقات» في القدرة على التواصل الصادق والمؤثر الذي يعالج المشكلات بمرونة، فيُصلح السلوك العملي دون أن يُفسد الود القائم.",
+    "alternativesNote": "التحمّل الصامت يؤجل المشكلة ويُضعف العلاقة من الداخل، بينما اللوم المباشر يُثير الدفاعية بدل التأثير الإيجابي.",
+    "options": [
       {
-        action: "أضع موعدًا داخليًا مبكرًا للجميع وأرسل تذكيرًا قبل الموعد بيوم.",
-        label: "موعد موحّد وتذكير",
-        effect: "تضيفين وقتًا احتياطيًا للتنسيق، وقد يستمر التأخير إذا كان سببه عائقًا لا يحله التذكير.",
-        compare: "يفيد في التنظيم، لكن سبب تكرار التأخير قد يظل قائمًا."
+        "key": "أ",
+        "text": "تحمّل التأخير بصمت وتعديل جدولكِ الشخصي لتغطية الفجوة، تجنبًا لأي حساسية قد تؤثر في صداقتكما.",
+        "feedback": "الرغبة في تجنّب الحساسية مفهومة، لكن الصمت المستمر يراكم الضغط الداخلي ولا يبني تواصلًا صحيًا أو يغيّر السلوك المتكرر."
       },
       {
-        action: "أوضح لها أثر التأخير وأسمع ما يعطّلها، ثم نتفق على موعد مبكر.",
-        label: "حوار واتفاق مشترك",
-        effect: "يفهم كل طرف أثر التأخير وما يعطّل العمل. ويساعد الاتفاق المشترك على اختيار موعد تستطيعان الالتزام به.",
-        compare: "يعالج تكرار التأخير بالحديث عن أثره وسبب حدوثه والاتفاق على حل."
+        "key": "ب",
+        "text": "تذكيرها بالمرات السابقة التي تسبّب فيها تأخرها بضغطٍ عليكِ، ومطالبتها بالالتزام التام في المرات القادمة.",
+        "feedback": "الوضوح مطلوب، لكن التركيز على استدعاء أخطاء الماضي بصيغة اللوم يدفع الطرف الآخر غالبًا للدفاع عن نفسه بدل التعاون لإيجاد حل."
       },
       {
-        action: "أعيد توزيع المهام بحيث أستطيع تنسيق الملف قبل أن ترسل جزءها.",
-        label: "تعديل توزيع العمل",
-        effect: "قد يقلّ اعتماد التنسيق على توقيت إرسالها، لكن ذلك قد ينقل العبء إلى طرف آخر ويؤجل النقاش بينكما.",
-        compare: "يخفف أثر التأخير على التنسيق ويترك نمط العمل بينكما بلا اتفاق."
+        "key": "ج",
+        "text": "التحدث معها بهدوء حول أثر التأخير على سير عملكما، واقتراح وضع مواعيد تسليم مبكرة تريح الطرفين.",
+        "feedback": "اختيار يوازن بين الوضوح واللباقة؛ يعبّر عن الأثر بصدق دون هجوم، ويقترح آلية عملية تؤثر إيجابيًا في التزامها وتحافظ على الصداقة."
       }
     ],
-    best: 1
+    "best": 2,
+    "pillar": {
+      "id": "relationship-management",
+      "title": "إدارة العلاقات",
+      "definition": "تطوير العلاقات الجيدة والمحافظة عليها والقدرة على التواصل والتأثير في الآخرين بفاعلية.",
+      "takeaway": "الحوار الهادئ الذي يركّز على الحلول المشتركة يحفظ العلاقة ويعزّز الالتزام."
+    }
   }
 ];
 
@@ -135,13 +141,13 @@ const choicesPanel = byId("choices-panel");
 const feedback = byId("feedback");
 const choices = byId("choices");
 const steps = byId("steps");
-const alternatives = byId("alternatives");
+const confirm = byId("confirm");
 const previous = byId("previous");
 const next = byId("next");
 const sound = byId("sound");
 const fullscreen = byId("fullscreen");
 const ordinals = ["١", "٢", "٣", "٤"];
-const letters = ["أ", "ب", "ج"];
+const drafts = Array(scenes.length).fill(null);
 const answers = Array(scenes.length).fill(null);
 let screen = -1;
 
@@ -188,85 +194,104 @@ function renderProgress() {
   previous.disabled = screen < 0;
   next.disabled = screen === scenes.length || (screen >= 0 && answers[screen] === null);
   next.hidden = screen === scenes.length;
-  byId("next-label").textContent = screen === scenes.length - 1 ? "الخلاصة" : "التالي";
+  byId("next-label").textContent = screen === scenes.length - 1 ? "عرض الخلاصة التطبيقية" : "الانتقال للموقف التالي";
 }
+
+function showPillar(index) {
+  const { title, definition } = scenes[index].pillar;
+  byId("definition-title").textContent = title + ":";
+  byId("definition-text").textContent = definition;
+  [...byId("pillar-options").children].forEach((button, i) => {
+    button.setAttribute("aria-pressed", String(i === index));
+  });
+}
+
+byId("pillar-options").replaceChildren(...scenes.map(({ pillar }, index) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = pillar.title;
+  button.addEventListener("click", () => showPillar(index));
+  return button;
+}));
+showPillar(0);
 
 function renderScene() {
   const scene = scenes[screen];
-  activity.dataset.theme = scene.theme;
-  byId("setting").textContent = scene.setting;
-  byId("scene-title").textContent = scene.title;
+  byId("setting").textContent = scene.contextTag;
+  byId("signal").textContent = scene.signalTag;
+  byId("scene-title").textContent = scene.pillar.title;
   byId("story").textContent = scene.story;
-  const cue = byId("cue");
-  cue.textContent = scene.cue || "";
-  cue.hidden = !scene.cue;
+  byId("hint").open = false;
+  byId("hint-text").textContent = scene.pillar.definition;
   byId("question").textContent = scene.question;
   choices.replaceChildren(...scene.options.map((option, index) => {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "choice";
+    const label = document.createElement("label");
+    label.className = "choice";
+
+    const input = document.createElement("input");
+    input.type = "radio";
+    input.name = "decision";
+    input.className = "sr-only";
+    input.checked = drafts[screen] === index;
+    input.addEventListener("keydown", (event) => event.stopPropagation());
+    input.addEventListener("change", () => {
+      drafts[screen] = index;
+      confirm.disabled = false;
+      play("slide");
+    });
+
     const letter = document.createElement("span");
     letter.className = "option-letter";
-    letter.textContent = letters[index];
+    letter.textContent = option.key;
     letter.setAttribute("aria-hidden", "true");
+
     const action = document.createElement("span");
-    action.textContent = option.action;
-    button.append(letter, action);
-    button.addEventListener("click", () => {
-      if (answers[screen] !== null) return;
-      answers[screen] = index;
-      renderAnswer();
-      renderProgress();
-      focusView(byId("feedback-title"));
-      play("answer");
-    });
-    return button;
+    action.textContent = option.text;
+    label.append(input, letter, action);
+    return label;
   }));
   renderAnswer();
-}
-
-function bestTag() {
-  const tag = document.createElement("span");
-  tag.className = "best";
-  tag.textContent = "الأنسب هنا";
-  return tag;
 }
 
 function renderAnswer() {
   const selectedIndex = answers[screen];
   choicesPanel.hidden = selectedIndex !== null;
   feedback.hidden = selectedIndex === null;
+  confirm.disabled = drafts[screen] === null;
   if (selectedIndex === null) return;
   const scene = scenes[screen];
   const selected = scene.options[selectedIndex];
-  byId("feedback-skill").textContent = scene.skill;
-  const selectedAction = byId("selected-action");
-  selectedAction.textContent = `قرارك · ${selected.label}`;
-  if (selectedIndex === scene.best) selectedAction.append(bestTag());
-  byId("selected-impact").textContent = selected.effect;
-  alternatives.replaceChildren(...scene.options.flatMap((option, index) => {
-    if (index === selectedIndex) return [];
-    const row = document.createElement("li");
-    const label = document.createElement("strong");
-    label.textContent = option.label;
-    if (index === scene.best) label.append(bestTag());
-    const explanation = document.createElement("span");
-    explanation.className = "comparison";
-    explanation.textContent = option.compare;
-    row.append(label, explanation);
-    return [row];
-  }));
+  const optimal = selectedIndex === scene.best;
+  byId("impact").classList.toggle("consider", !optimal);
+  byId("feedback-title").textContent = optimal
+    ? "استجابة متّزنة ومطابقة للمكوّن"
+    : "توجّه شائع، ولننظر إلى الزاوية الأعمق";
+  byId("selected-impact").textContent = selected.feedback;
+  byId("best-option").textContent = scene.options[scene.best].text;
+  byId("best-rationale").textContent = scene.bestRationale;
+  byId("alternative-note").textContent = scene.alternativesNote;
 }
 
 function showSummary() {
-  byId("takeaways").replaceChildren(...scenes.map((scene) => {
+  byId("copy-toast").textContent = "";
+  byId("takeaways").replaceChildren(...scenes.map(({ pillar, best }, index) => {
     const card = document.createElement("article");
-    card.dataset.theme = scene.theme;
+    const header = document.createElement("header");
     const title = document.createElement("h2");
-    title.textContent = scene.skill;
+    title.textContent = pillar.title;
+    const badge = document.createElement("span");
+    const optimal = answers[index] === best;
+    badge.className = optimal ? "badge" : "badge consider";
+    badge.textContent = optimal ? "وافق الاستجابة الأنسب" : "تمت مقارنة البدائل";
+    header.append(title, badge);
+    const definition = document.createElement("p");
+    definition.textContent = pillar.definition;
+    const label = document.createElement("strong");
+    label.textContent = "القاعدة التطبيقية:";
     const takeaway = document.createElement("p");
-    takeaway.textContent = scene.takeaway;
-    card.append(title, takeaway);
+    takeaway.className = "takeaway";
+    takeaway.textContent = pillar.takeaway;
+    card.append(header, definition, label, takeaway);
     return card;
   }));
 }
@@ -287,17 +312,37 @@ function goBack() {
 byId("start").addEventListener("click", goForward);
 previous.addEventListener("click", goBack);
 next.addEventListener("click", goForward);
+confirm.addEventListener("click", () => {
+  if (drafts[screen] === null || answers[screen] !== null) return;
+  answers[screen] = drafts[screen];
+  renderAnswer();
+  renderProgress();
+  focusView(byId("feedback-title"));
+  play("answer");
+});
 byId("change").addEventListener("click", () => {
-  const selectedIndex = answers[screen];
   answers[screen] = null;
   renderAnswer();
   renderProgress();
-  focusView(choices.children[selectedIndex]);
+  focusView(choices.querySelector("input:checked"));
 });
 byId("restart").addEventListener("click", () => {
+  drafts.fill(null);
   answers.fill(null);
-  showScreen(0);
+  showScreen(-1);
   play("slide");
+});
+byId("copy-summary").addEventListener("click", async () => {
+  const text = [
+    "ملخص التطبيق العملي لمكونات الذكاء العاطفي (جامعة طيبة):",
+    ...scenes.map(({ pillar }, i) => `${i + 1}. ${pillar.title}: ${pillar.takeaway}`)
+  ].join("\n");
+  try {
+    await navigator.clipboard.writeText(text);
+    byId("copy-toast").textContent = "تم نسخ ملخص القواعد التطبيقية بنجاح.";
+  } catch {
+    byId("copy-toast").textContent = "تعذر النسخ التلقائي، يمكنكِ تحديد النص يدويًا.";
+  }
 });
 
 const AudioEngine = window.AudioContext || window.webkitAudioContext;

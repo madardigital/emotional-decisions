@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ed">
+  <meta name="theme-color" content="#faf8f5">
   <meta name="description" content="نشاط تفاعلي في مقرر الذكاء العاطفي بجامعة طيبة. أربعة مواقف جامعية ونقاش قصير حول القرارات.">
   <title>بين الشعور والقرار | الذكاء العاطفي</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./styles.css?v=2">
-  <script src="./activity.js?v=2" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <script src="./activity.js?v=3" defer></script>
 </head>
 <body>
   <div class="presentation" id="presentation">
@@ -34,40 +34,55 @@
       <main id="main" tabindex="-1">
         <section id="intro" class="screen hero" aria-labelledby="intro-title">
           <div class="hero-copy">
-            <p class="eyebrow"><i aria-hidden="true"></i> نشاط تفاعلي · ٣ إلى ٤ دقائق</p>
-            <h1 id="intro-title" tabindex="-1">بين الشعور<br><span>والقرار</span></h1>
-            <p class="hero-description">أربعة مواقف من الحياة الجامعية. اختاري كيف تتصرفين، ثم قارني أثر قرارك بالبدائل.</p>
-            <button type="button" id="start" class="primary" disabled>ابدئي النشاط <span class="arrow" aria-hidden="true">←</span></button>
+            <p class="eyebrow"><i aria-hidden="true"></i> تمرين تطبيقي تفاعلي · ٣ – ٤ دقائق</p>
+            <h1 id="intro-title" tabindex="-1">كيف تتعاملين مع المواقف اليومية بذكاء عاطفي؟</h1>
+            <p class="hero-description">تضعكِ هذه التجربة أمام أربعة مواقف جامعية واجتماعية واقعية، يرتبط كل موقف بأحد المكونات الأربعة للذكاء العاطفي. اقرئي تفاصيل كل موقف، وقارني بين البدائل المتاحة لاختيار الاستجابة الأكثر اتزانًا وملاءمة للسياق.</p>
+            <p class="intro-note">لا توجد درجات لتقييم شخصيتكِ؛ الهدف هو التدرب على تحليل المواقف واتخاذ القرار.</p>
+            <button type="button" id="start" class="primary" disabled>ابدئي الموقف الأول <span class="arrow" aria-hidden="true">←</span></button>
             <noscript><p>فعّلي JavaScript في المتصفح لإكمال النشاط.</p></noscript>
           </div>
-          <div class="hero-art"><img src="./assets/hero.webp" alt="" width="768" height="768" fetchpriority="high"></div>
+          <aside class="pillar-panel" aria-labelledby="pillar-heading">
+            <h2 id="pillar-heading">الأساس العلمي المعتمد (اضغطي على أي مكوّن لمراجعة مفهومه):</h2>
+            <div id="pillar-options" class="pillar-options" role="group" aria-label="مكونات الذكاء العاطفي الأربعة"></div>
+            <div class="definition" id="definition" role="status"><strong id="definition-title"></strong><p id="definition-text"></p></div>
+          </aside>
         </section>
 
         <section id="activity" class="screen workspace" aria-labelledby="scene-title" hidden>
           <article id="scene" class="scene">
             <div class="scene-copy">
-              <p id="setting" class="scene-setting"></p>
+              <p class="scene-setting">المكوّن المستهدف</p>
               <h1 id="scene-title" tabindex="-1"></h1>
+              <div class="scene-tags"><span id="setting"></span><span id="signal"></span></div>
               <p id="story" class="story"></p>
-              <blockquote id="cue" class="cue" hidden></blockquote>
+              <details id="hint" class="hint">
+                <summary>تذكير بالمفهوم</summary>
+                <strong>التعريف العلمي للمكوّن:</strong>
+                <p id="hint-text"></p>
+              </details>
             </div>
-            <div class="scene-art" aria-hidden="true"></div>
           </article>
           <div class="decision">
             <section id="choices-panel" aria-labelledby="question">
               <h2 id="question"></h2>
-              <p class="decision-guide">اختاري التصرف الأقرب لما ستفعلينه.</p>
-              <div id="choices" class="choices"></div>
+              <p class="decision-guide" id="choice-guide">اختاري أحد البدائل الثلاثة للمقارنة ثم اعتمدي قراركِ.</p>
+              <div id="choices" class="choices" role="radiogroup" aria-labelledby="question" aria-describedby="choice-guide"></div>
+              <button type="button" id="confirm" class="primary" disabled>اعتماد القرار</button>
             </section>
             <section id="feedback" aria-labelledby="feedback-title" hidden>
-              <p id="feedback-skill" class="feedback-skill"></p>
-              <h2 id="feedback-title" tabindex="-1">أثر القرار</h2>
-              <div class="impact">
-                <p id="selected-action" class="selected-action"></p>
+              <div class="impact" id="impact">
+                <h2 id="feedback-title" tabindex="-1"></h2>
                 <p id="selected-impact"></p>
               </div>
-              <h3 class="compare-title">مقارنة البدائل</h3>
-              <ul id="alternatives" class="alternatives"></ul>
+              <div class="rationale">
+                <h3>الاستجابة الأنسب في هذا السياق</h3>
+                <p id="best-option"></p>
+                <p id="best-rationale"></p>
+              </div>
+              <div class="rationale alternative">
+                <h3>لماذا كانت البدائل الأخرى أقل ملاءمة؟</h3>
+                <p id="alternative-note"></p>
+              </div>
               <button type="button" id="change" class="change">غيّري اختيارك</button>
             </section>
           </div>
@@ -76,15 +91,16 @@
         <section id="summary" class="screen summary" aria-labelledby="summary-title" hidden>
           <div class="summary-head">
             <div class="summary-inner">
-              <p class="summary-kicker">أكملتِ المواقف الأربعة</p>
-              <h1 id="summary-title" tabindex="-1">من الموقف إلى الممارسة</h1>
+              <p class="summary-kicker">اكتملت المواقف الأربعة</p>
+              <h1 id="summary-title" tabindex="-1">خلاصة التطبيق العملي للذكاء العاطفي</h1>
+              <p>الذكاء العاطفي مهارة متكاملة تبدأ من الداخل بفهم مشاعرنا وتنظيمها، وتمتد إلى الخارج بقراءة مشاعر الآخرين وبناء تواصل فاعل يحافظ على العلاقات الجيدة.</p>
             </div>
-            <span class="summary-mark" aria-hidden="true"></span>
           </div>
           <div id="takeaways" class="takeaways"></div>
           <div class="summary-bottom">
-            <div class="discussion"><h2>للنقاش في المحاضرة</h2><p>أي تفصيل في أحد المواقف غيّر قرارك؟ شاركيه في الدردشة.</p></div>
-            <button type="button" id="restart" class="primary">أعيدي النشاط <span class="arrow" aria-hidden="true">↻</span></button>
+            <p id="copy-toast" role="status"></p>
+            <button type="button" id="copy-summary" class="change">نسخ ملخص القواعد التطبيقية</button>
+            <button type="button" id="restart" class="primary">إعادة التجربة <span class="arrow" aria-hidden="true">↻</span></button>
           </div>
         </section>
       </main>
