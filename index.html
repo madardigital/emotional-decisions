@@ -1,15 +1,15 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#faf8f5">
+  <meta name="theme-color" content="#0e1619">
   <meta name="description" content="نشاط تفاعلي في مقرر الذكاء العاطفي بجامعة طيبة. أربعة مواقف جامعية ونقاش قصير حول القرارات.">
-  <title>بين الشعور والقرار | الذكاء العاطفي</title>
-  <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./fonts.css">
-  <link rel="stylesheet" href="./styles.css?v=3">
-  <script src="./activity.js?v=3" defer></script>
+  <title>اتّزان | الذكاء العاطفي</title>
+  <link rel="icon" href="./assets/mark.svg?v=4" type="image/svg+xml">
+  <link rel="stylesheet" href="./fonts.css?v=4">
+  <link rel="stylesheet" href="./styles.css?v=4">
+  <script src="./activity.js?v=4" defer></script>
 </head>
 <body>
   <div class="presentation" id="presentation">
@@ -17,8 +17,10 @@
       <a class="skip" href="#main">انتقلي إلى النشاط</a>
       <header class="topbar">
         <div class="identity">
-          <img src="./assets/mark.svg" alt="" width="40" height="40">
-          <div><strong>بين الشعور والقرار</strong><span>جامعة طيبة · مقرر الذكاء العاطفي</span></div>
+          <svg class="brand-mark" aria-hidden="true" width="40" height="40" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><rect width="40" height="40" rx="13" fill="#0f766e"/><svg x="8" y="8" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="9" stroke-opacity="0.45" />
+            <path d="M12 3v18M5 12h14" stroke-linecap="round" />
+            <circle cx="12" cy="12" r="3" fill="#fff" /></svg></svg>
+          <div><strong>اتّزان</strong><span>جامعة طيبة • مقرر الذكاء العاطفي</span></div>
         </div>
         <div class="controls" aria-label="خيارات العرض">
           <button class="tool" type="button" id="sound" aria-label="الصوت" aria-pressed="false" title="تشغيل الصوت" disabled>
@@ -26,6 +28,15 @@
           </button>
           <button class="tool" type="button" id="fullscreen" aria-label="ملء الشاشة" aria-pressed="false" title="ملء الشاشة" disabled>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path class="full-in" d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/><path class="full-out" d="M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5"/></svg><span class="tool-label">ملء الشاشة</span>
+          </button>
+          <button class="tool" type="button" id="theme-toggle" aria-label="التبديل إلى المظهر الفاتح" title="التبديل إلى المظهر الفاتح" disabled>
+            <svg class="theme-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" /></svg><svg class="theme-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>
           </button>
         </div>
         <p id="notice" class="sr-only" role="status"></p>
@@ -70,8 +81,18 @@
               <button type="button" id="confirm" class="primary" disabled>اعتماد القرار</button>
             </section>
             <section id="feedback" aria-labelledby="feedback-title" hidden>
+              <div class="confirmed-choice" aria-label="اختياركِ">
+                <span class="option-letter" id="confirmed-letter" aria-hidden="true"></span>
+                <span id="confirmed-text"></span>
+              </div>
               <div class="impact" id="impact">
-                <h2 id="feedback-title" tabindex="-1"></h2>
+                <h2 id="feedback-title" tabindex="-1">
+                  <span class="impact-icon" aria-hidden="true">
+                    <svg class="check-icon" viewBox="0 0 24 24"><path d="m5 12 4 5L20 6"/></svg>
+                    <svg class="note-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 8v4m0 4h.01"/></svg>
+                  </span>
+                  <span id="feedback-heading"></span>
+                </h2>
                 <p id="selected-impact"></p>
               </div>
               <div class="rationale">

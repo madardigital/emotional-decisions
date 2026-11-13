@@ -263,7 +263,10 @@ function renderAnswer() {
   const selected = scene.options[selectedIndex];
   const optimal = selectedIndex === scene.best;
   byId("impact").classList.toggle("consider", !optimal);
-  byId("feedback-title").textContent = optimal
+  byId("confirmed-letter").textContent = selected.key;
+  byId("confirmed-text").textContent = selected.text;
+  byId("feedback").classList.toggle("consider", !optimal);
+  byId("feedback-heading").textContent = optimal
     ? "استجابة متّزنة ومطابقة للمكوّن"
     : "توجّه شائع، ولننظر إلى الزاوية الأعمق";
   byId("selected-impact").textContent = selected.feedback;
@@ -472,3 +475,33 @@ document.addEventListener("keydown", (event) => {
 byId("start").disabled = false;
 sound.disabled = !AudioEngine;
 fullscreen.disabled = false;
+
+const themeToggle = byId("theme-toggle");
+const themeStorage = "etizan-theme";
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const dark = theme === "dark";
+  const label = dark ? "التبديل إلى المظهر الفاتح" : "التبديل إلى المظهر الداكن";
+  themeToggle.setAttribute("aria-label", label);
+  themeToggle.title = label;
+  document.querySelector('meta[name="theme-color"]').content = dark ? "#0e1619" : "#faf8f5";
+}
+
+try {
+  const savedTheme = localStorage.getItem(themeStorage);
+  if (savedTheme === "light" || savedTheme === "dark") applyTheme(savedTheme);
+} catch {
+  // The toggle still works when browser storage is unavailable.
+}
+
+themeToggle.disabled = false;
+themeToggle.addEventListener("click", () => {
+  const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  applyTheme(theme);
+  try {
+    localStorage.setItem(themeStorage, theme);
+  } catch {
+    // The current theme remains active without persistence.
+  }
+});
