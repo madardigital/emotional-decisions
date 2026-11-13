@@ -3,61 +3,53 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="نشاط تفاعلي في مقرر الذكاء العاطفي بجامعة طيبة. أربعة مواقف جامعية ونقاش قصير حول القرارات.">
   <meta name="theme-color" content="#f5f3ed">
+  <meta name="description" content="نشاط تفاعلي في مقرر الذكاء العاطفي بجامعة طيبة. أربعة مواقف جامعية ونقاش قصير حول القرارات.">
   <title>بين الشعور والقرار | الذكاء العاطفي</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./activity.js" defer></script>
+  <link rel="stylesheet" href="./fonts.css">
+  <link rel="stylesheet" href="./styles.css?v=2">
+  <script src="./activity.js?v=2" defer></script>
 </head>
 <body>
-  <a class="skip" href="#main">انتقلي إلى النشاط</a>
-  <div class="shell">
-    <header class="masthead">
-      <div class="identity">
-        <img src="./assets/mark.svg" alt="" width="44" height="44">
-        <div><strong>بين الشعور والقرار</strong><span>مقرر الذكاء العاطفي</span></div>
-      </div>
-      <span class="university">جامعة طيبة</span>
-    </header>
+  <div class="presentation" id="presentation">
+    <div class="stage" id="stage">
+      <a class="skip" href="#main">انتقلي إلى النشاط</a>
+      <header class="topbar">
+        <div class="identity">
+          <img src="./assets/mark.svg" alt="" width="40" height="40">
+          <div><strong>بين الشعور والقرار</strong><span>جامعة طيبة · مقرر الذكاء العاطفي</span></div>
+        </div>
+        <div class="controls" aria-label="خيارات العرض">
+          <button class="tool" type="button" id="sound" aria-label="الصوت" aria-pressed="false" title="تشغيل الصوت" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4Z"/><path class="sound-off" d="m16 10 5 5m0-5-5 5"/><path class="sound-on" d="M16 9a4 4 0 0 1 0 6m2-8a7 7 0 0 1 0 10"/></svg><span class="tool-label">الصوت</span>
+          </button>
+          <button class="tool" type="button" id="fullscreen" aria-label="ملء الشاشة" aria-pressed="false" title="ملء الشاشة" disabled>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path class="full-in" d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/><path class="full-out" d="M4 9h5V4m11 5h-5V4M4 15h5v5m11-5h-5v5"/></svg><span class="tool-label">ملء الشاشة</span>
+          </button>
+        </div>
+        <p id="notice" class="sr-only" role="status"></p>
+      </header>
 
-    <main id="main" tabindex="-1">
-      <section id="intro" aria-labelledby="intro-title">
-        <div class="hero">
+      <main id="main" tabindex="-1">
+        <section id="intro" class="screen hero" aria-labelledby="intro-title">
           <div class="hero-copy">
-            <div class="context"><i aria-hidden="true"></i> نشاط تفاعلي</div>
+            <p class="eyebrow"><i aria-hidden="true"></i> نشاط تفاعلي · ٣ إلى ٤ دقائق</p>
             <h1 id="intro-title" tabindex="-1">بين الشعور<br><span>والقرار</span></h1>
-            <p>أربعة مواقف من الحياة الجامعية. في كل موقف، اختاري كيف تتصرفين واقرئي ما الذي قد يترتّب على قرارك.</p>
-            <div class="hero-actions">
-              <button type="button" id="start" class="primary" disabled>ابدئي النشاط <span class="arrow" aria-hidden="true">←</span></button>
-              <span class="duration"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v5l3.3 1.7" stroke-linecap="round"/></svg>٣ إلى ٤ دقائق</span>
-            </div>
-            <noscript><p class="no-script">فعّلي JavaScript في المتصفح لتتمكّني من إكمال النشاط.</p></noscript>
+            <p class="hero-description">أربعة مواقف من الحياة الجامعية. اختاري كيف تتصرفين، ثم قارني أثر قرارك بالبدائل.</p>
+            <button type="button" id="start" class="primary" disabled>ابدئي النشاط <span class="arrow" aria-hidden="true">←</span></button>
+            <noscript><p>فعّلي JavaScript في المتصفح لإكمال النشاط.</p></noscript>
           </div>
-          <div class="hero-art">
-            <img src="./assets/hero.webp" alt="" width="768" height="768" fetchpriority="high">
-          </div>
-        </div>
-        <ul id="skill-strip" class="skill-strip" aria-label="مهارات النشاط">
-          <li><span>الوعي الذاتي</span></li>
-          <li><span>الوعي الاجتماعي</span></li>
-          <li><span>إدارة الذات</span></li>
-          <li><span>إدارة العلاقات</span></li>
-        </ul>
-      </section>
+          <div class="hero-art"><img src="./assets/hero.webp" alt="" width="768" height="768" fetchpriority="high"></div>
+        </section>
 
-      <section id="activity" aria-labelledby="scene-title" hidden>
-        <div class="progress" role="group" aria-label="تقدّم النشاط">
-          <span id="progress-label"></span>
-          <ol id="steps" class="steps" aria-label="المواقف الأربعة"></ol>
-        </div>
-        <div id="workspace" class="workspace">
+        <section id="activity" class="screen workspace" aria-labelledby="scene-title" hidden>
           <article id="scene" class="scene">
             <div class="scene-copy">
               <p id="setting" class="scene-setting"></p>
               <h1 id="scene-title" tabindex="-1"></h1>
               <p id="story" class="story"></p>
-              <blockquote id="cue" class="cue"></blockquote>
+              <blockquote id="cue" class="cue" hidden></blockquote>
             </div>
             <div class="scene-art" aria-hidden="true"></div>
           </article>
@@ -74,37 +66,44 @@
                 <p id="selected-action" class="selected-action"></p>
                 <p id="selected-impact"></p>
               </div>
-              <h3 class="compare-title">كيف تقارنين بين البدائل؟</h3>
+              <h3 class="compare-title">مقارنة البدائل</h3>
               <ul id="alternatives" class="alternatives"></ul>
-              <div class="next-row">
-                <button type="button" id="next" class="primary"><span id="next-label"></span> <span class="arrow" aria-hidden="true">←</span></button>
-              </div>
+              <button type="button" id="change" class="change">غيّري اختيارك</button>
             </section>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="summary" aria-labelledby="summary-title" hidden>
-        <div class="summary-head">
-          <div class="summary-inner">
-            <p class="summary-kicker">أكملتِ المواقف الأربعة</p>
-            <h1 id="summary-title" tabindex="-1">من الموقف إلى الممارسة</h1>
-            <p>أربع طرق لفهم ما يحدث قبل أن تختاري كيف تتصرفين.</p>
+        <section id="summary" class="screen summary" aria-labelledby="summary-title" hidden>
+          <div class="summary-head">
+            <div class="summary-inner">
+              <p class="summary-kicker">أكملتِ المواقف الأربعة</p>
+              <h1 id="summary-title" tabindex="-1">من الموقف إلى الممارسة</h1>
+            </div>
+            <span class="summary-mark" aria-hidden="true"></span>
           </div>
-          <span class="summary-mark" aria-hidden="true"></span>
-        </div>
-        <div id="takeaways" class="takeaways"></div>
-        <div class="summary-bottom">
-          <div class="discussion"><h2>للنقاش في المحاضرة</h2><p>أي تفصيل في أحد المواقف غيّر قرارك؟ شاركيه في دردشة المحاضرة.</p></div>
-          <button type="button" id="restart" class="primary">أعيدي النشاط <span class="repeat" aria-hidden="true">↻</span></button>
-        </div>
-      </section>
-    </main>
+          <div id="takeaways" class="takeaways"></div>
+          <div class="summary-bottom">
+            <div class="discussion"><h2>للنقاش في المحاضرة</h2><p>أي تفصيل في أحد المواقف غيّر قرارك؟ شاركيه في الدردشة.</p></div>
+            <button type="button" id="restart" class="primary">أعيدي النشاط <span class="arrow" aria-hidden="true">↻</span></button>
+          </div>
+        </section>
+      </main>
 
-    <footer class="footer">
-      <span>مشروع مقرر الذكاء العاطفي</span>
-      <a href="https://www.youtube.com/watch?v=ybXgv9FGzPM" target="_blank" rel="noopener noreferrer">مصدر المفاهيم <span aria-hidden="true">↗</span><span class="sr-only">، يفتح في تبويب جديد</span></a>
-    </footer>
+      <footer class="footer">
+        <nav id="navigation" class="navigation" aria-label="التنقّل بين الشرائح" hidden>
+          <button type="button" id="previous" class="nav-button" aria-keyshortcuts="ArrowRight"><span aria-hidden="true">→</span><span>السابق</span></button>
+          <div class="progress" role="group" aria-label="التقدم في النشاط">
+            <span id="progress-label" class="progress-label"></span>
+            <ol id="steps" class="steps" aria-label="المواقف الأربعة"></ol>
+          </div>
+          <button type="button" id="next" class="nav-button nav-next" aria-keyshortcuts="ArrowLeft"><span id="next-label"></span><span aria-hidden="true">←</span></button>
+        </nav>
+        <div id="credits" class="credits">
+          <span>جامعة طيبة</span>
+          <a href="https://www.youtube.com/watch?v=ybXgv9FGzPM" target="_blank" rel="noopener noreferrer">مصدر المفاهيم <span aria-hidden="true">↗</span><span class="sr-only">، يفتح في تبويب جديد</span></a>
+        </div>
+      </footer>
+    </div>
   </div>
 </body>
 </html>

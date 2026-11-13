@@ -3,124 +3,122 @@
 const scenes = [
   {
     theme: "self-awareness",
-    setting: "بروفة العرض",
-    title: "ملاحظة بقيت في بالك",
-    story: "بعد البروفة، أثنت زميلتك على الأمثلة وقالت إن فكرتك الرئيسة ظهرت متأخرة. العرض غدًا، وفكّرتِ فورًا في حذف الشريحة الأولى. لاحظتِ أنكِ تذكّرتِ الملاحظة ونسيتِ ما قالته عن الأمثلة.",
-    cue: "«يمكن من البداية شرحي كله ما كان واضح.»",
-    question: "ما الذي يساعدك على فهم رد فعلك أولًا؟",
+    setting: "الاستعداد لعرض بحثي",
+    title: "قبل حذف الشريحة",
+    story: "عرض بحثكِ غدًا أمام أستاذة المقرر والطالبات. خلال مراجعة الشرائح مساءً، بدأتِ تنتقدين كل جملة وتفكرين في حذف جزء أعددتِه بعناية.",
+    cue: "«أحسّ إن هالجزء مو كافي.»",
+    question: "ما الخطوة الأولى لفهم سبب رغبتكِ في الحذف؟",
     skill: "الوعي الذاتي",
-    takeaway: "سمّي ما تشعرين به ولاحظي أثره في تفسيرك للموقف.",
+    takeaway: "سمّي الشعور ولاحظي كيف يؤثر في تقييمكِ لعملكِ.",
     options: [
       {
-        action: "أعيد مشاهدة المقدمة لأحدد أين تأخرت الفكرة الرئيسة.",
-        label: "مراجعة المقدمة",
-        effect: "تساعدك المراجعة في تحديد ما يحتاج إلى تعديل، وقد يبقى سبب رغبتك في حذف الشريحة كلها غامضًا.",
-        compare: "تفحص ترتيب العرض، وتترك أثر الشعور في حكمك دون فحص."
+        action: "آخذ استراحة قصيرة وأعود لقراءة الجزء بعد أن يخف التوتر.",
+        label: "الاستراحة ثم المراجعة",
+        effect: "قد تخفّ حدة التوتر بعد الاستراحة، لكن سبب حكمكِ على الجزء قد يبقى غير واضح.",
+        compare: "تخفف التوتر وتؤجل فحص أثره في الحكم على الجزء."
       },
       {
-        action: "أسمّي شعوري وأسأل نفسي كيف أثّر في حكمي على الشريحة.",
-        label: "تسمية الشعور",
-        effect: "قد تلاحظين أن الإحراج أو القلق جعلك تعمّمين ملاحظة عن ترتيب الفكرة على شرحك كله. يساعدك ذلك على تحديد ما يستحق المراجعة.",
-        compare: "هذا أنسب أولًا لأن رغبتك في الحذف جاءت مع تعميم ملاحظة محددة على العرض."
+        action: "أسمّي قلقي من التقييم وأسأل نفسي كيف غيّر حكمي على الجزء.",
+        label: "فهم أثر القلق",
+        effect: "تنتبهين إلى أن القلق قد يجعل نقدكِ أشد من المعتاد، فتراجعين الجزء وفق ما يدعمه في البحث.",
+        compare: "يكشف صلة القلق بالنقد المفاجئ ويهيئ لمراجعة الجزء بهدوء."
       },
       {
-        action: "أسأل زميلتي عن أول موضع تشتّت فيه انتباهها أثناء العرض.",
-        label: "طلب مثال محدد",
-        effect: "قد تحصلين على ملاحظة مفيدة، لكنك ستفهمين تجربتها هي قبل أن تتبيني كيف قرأتِ أنتِ تعليقها.",
-        compare: "يوضح تجربة الزميلة ويصلح خطوة تالية لتحسين العرض."
+        action: "أرسل الجزء لزميلة وأطلب منها تحديد ما يحتاج إلى مراجعة.",
+        label: "طلب رأي زميلة",
+        effect: "قد تكشف ملاحظتها خللًا محددًا. يبقى سؤال مختلف: ما الذي جعلكِ تفكرين في حذف الجزء كله؟",
+        compare: "يفيد في تحرير الشرائح، ويعطيكِ رأيًا خارجيًا قبل فحص حكمكِ."
       }
     ],
     best: 1
   },
   {
     theme: "social-awareness",
-    setting: "قبل النقاش عبر الإنترنت",
-    title: "حين قلّت مشاركتها",
-    story: "قبل النقاش بدقائق، صارت زميلتك التي شاركت بحماس في البروفة تردّ بجمل قصيرة. حاولت بدء مداخلتها مرتين، وتوقفت حين دخلت أصوات أخرى. ثم قالت إن ترتيب المداخلات مناسب لها.",
-    cue: "«إيه، عادي. كمّلوا.»",
-    question: "كيف تتبينين ما تحتاجه في هذه اللحظة؟",
+    setting: "اجتماع فريق عن بُعد",
+    title: "حين تغيّرت نبرتها",
+    story: "أثناء مناقشة خطة البحث، اكتفت زميلتكِ، التي عادةً تشارك بحماس، بردود قصيرة. بدت نبرتها متعبة، ولم تذكر أن لديها مشكلة. ما زال الفريق يوزع المهام.",
+    cue: "«اللي تشوفونه مناسب.»",
+    question: "كيف تراعين تغيّر مشاركتها قبل تثبيت المهام؟",
     skill: "الوعي الاجتماعي",
-    takeaway: "انتبهي إلى الإشارات واسألي لتتحققي مما قد تعنيه.",
+    takeaway: "التقطي الإشارات واسألي بلطف للتحقق مما قد تعنيه.",
     options: [
       {
-        action: "أسألها على الخاص إن كانت ترغب أن أترك لها مساحة لتكمل فكرتها.",
-        label: "سؤال خاص ومحدد",
-        effect: "محاولتا الكلام تستحقان الانتباه. السؤال الخاص يتيح لها أن توضّح إن كانت تريد فرصة للكلام أو تفضّل متابعة النقاش.",
-        compare: "هذا أنسب لأن السؤال يستند إلى محاولتي الكلام ويترك لها حرية توضيح ما تحتاجه."
+        action: "أستكمل النقاش وأسألها على الخاص إن كانت تفضّل وقتًا قبل تأكيد دورها.",
+        label: "سؤال على الخاص",
+        effect: "تعطينها فرصة لتوضح ما تحتاجه وتحفظين خصوصيتها. تغيّر النبرة يدعو للسؤال، وقد تكون له أسباب مختلفة.",
+        compare: "يراعي الإشارة ويمنحها فرصة لتحديد حاجتها بنفسها."
       },
       {
-        action: "أعطيها الدور في أول النقاش حتى تتمكن من طرح فكرتها كاملة.",
-        label: "تقديم دورها",
-        effect: "قد يساعدها الدور المبكر إذا كانت المشكلة في المقاطعة. وقد يضعها تحت ضغط إذا كانت تفضّل وقتًا أطول أو تودّ الإبقاء على الترتيب.",
-        compare: "يوفّر فرصة للكلام بناءً على افتراض أن تقديم دورها هو ما تريده."
+        action: "أخفف عنها المهمة في هذه الجولة وأوضح للفريق أن التوزيع قابل للمراجعة.",
+        label: "تخفيف المهمة",
+        effect: "قد يفيدها تخفيف المهمة لو كانت مرهقة، وقد يحرمها من دور تريده إذا كان سبب قلة مشاركتها مختلفًا.",
+        compare: "يخفف العبء بناءً على قراءة قد لا تعكس ما تريده."
       },
       {
-        action: "ألتزم بالترتيب الذي وافقت عليه، وأتأكد أن لكل طالبة وقتها.",
-        label: "الإبقاء على الترتيب",
-        effect: "تحترمين موافقتها وتحفظين وقتها في النقاش. يبقى سبب تراجع مشاركتها أثناء الاستعداد للنقاش غير واضح.",
-        compare: "يحترم الموافقة، وتبقى محاولتا الكلام المتوقفتان دون متابعة."
+        action: "أبقي التوزيع كما هو، وأمنح الجميع وقتًا للتعليق قبل تثبيته.",
+        label: "فتح المجال للجميع",
+        effect: "تضمنين فرصة متساوية للتعليق، لكن الزميلة قد تفضّل توضيح احتياجها بعيدًا عن المجموعة.",
+        compare: "يفتح باب التعليق وتبقى الخصوصية عاملًا في قدرتها على الكلام."
       }
     ],
     best: 0
   },
   {
     theme: "self-management",
-    setting: "قبل التسليم بعشر دقائق",
-    title: "ردّ على وشك الإرسال",
-    story: "كتبت زميلة في المجموعة أن تأخّر الرفع بسبب الجزء الذي تعملين عليه. تتذكرين أنكِ أرسلتِ نسختك صباحًا، وسجل الرسائل أمامك. كتبتِ ردًا حادًا وشعرتِ برغبة في إرساله فورًا.",
-    cue: "«إلى الآن ما وصلنا الجزء المطلوب.»",
-    question: "كيف تتصرفين مع ضيق الوقت ورغبتك في الرد؟",
+    setting: "قبل التسليم بساعتين",
+    title: "جزء لم يكتمل",
+    story: "اعتذرت زميلتكِ عن إكمال جزئها من التكليف الجماعي لظرف طارئ. بقيت ساعتان، والجزء الناقص له نقاط أساسية يمكن تغطيتها في الوقت المتاح. شعرتِ بالضيق وبدأتِ تكتبين رسالة عتاب.",
+    question: "كيف تتعاملين مع اندفاعكِ وتستفيدين من الوقت؟",
     skill: "إدارة الذات",
-    takeaway: "امنحي نفسك وقفة قصيرة ثم اختاري ردًا يناسب الوقت والهدف.",
+    takeaway: "خذي وقفة قصيرة ثم عدّلي خطتكِ وفق ما يمكن إنجازه.",
     options: [
       {
-        action: "أرسل النسخة من جديد، وأترك توضيح ما حدث إلى ما بعد التسليم.",
-        label: "إعادة الإرسال فقط",
-        effect: "تساعدين الفريق على استلام النسخة سريعًا. ومن دون توضيح قد تُفهم إعادة الإرسال على أنها نسخة جديدة، فيبقى سبب التأخير ملتبسًا.",
-        compare: "يوفّر الملف فورًا، ويؤجل توضيح أنه النسخة المرسلة صباحًا."
+        action: "أبدأ بتغطية الجزء وحدي فورًا، وأطلب من الفريق مراجعة ما أكتبه لاحقًا.",
+        label: "العمل الفردي فورًا",
+        effect: "تبدئين العمل بسرعة، لكن تحمل المهمة وحدكِ قد يزيد الضغط وتضيق معه فرصة توزيع الجهد.",
+        compare: "يبدأ الإنجاز سريعًا وقد يحمّلكِ عملًا يستطيع الفريق تقاسمه."
       },
       {
-        action: "أوضح في المجموعة أنني أرسلت الملف صباحًا، وأطلب منهن مراجعته.",
-        label: "التوضيح الفوري",
-        effect: "تصححين المعلومة بسرعة، لكن الطلب يترك للفريق مهمة البحث عن الملف. ومع الغضب قد تخرج الرسالة بلهجة أشد مما تقصدين.",
-        compare: "يوضح وقت الإرسال، ويترك العثور على الملف للفريق تحت ضغط الموعد."
+        action: "أراسل الأستاذة لطلب تمديد، وأطلب من الفريق مراجعة الأجزاء الجاهزة.",
+        label: "طلب تمديد",
+        effect: "قد يخف الضغط إذا وافقت الأستاذة، لكن مراجعة المكتمل تترك الجزء الناقص معلقًا حتى يصل الرد.",
+        compare: "يعتمد على رد خارجي، مع أن النقاط الأساسية قابلة للإنجاز في الوقت المتاح."
       },
       {
-        action: "أتمهّل لحظات، وأتحقق من الإرسال، ثم أعيد الملف مع توضيح مختصر.",
-        label: "وقفة ثم توضيح",
-        effect: "تعطيك الوقفة فرصة لضبط نبرة الرد. والتحقق ثم إعادة الملف مع توضيح قصير يحلان الالتباس ويدعمان التسليم في الوقت المتبقي.",
-        compare: "هذا أنسب لأن الوقفة قصيرة ويمكنك خلالها الانتقال من رد حاد إلى إجراء يحل المشكلة."
+        action: "أتمهّل قبل إرسال الرد، ثم أتفق مع الفريق على تغطية النقاط الأساسية.",
+        label: "وقفة وترتيب للأولويات",
+        effect: "تتيح لكِ الوقفة ضبط نبرة الرد. ويساعد تقسيم النقاط الأساسية على تكييف الخطة مع الساعتين المتبقيتين.",
+        compare: "يجمع بين ضبط الاندفاع وتغيير الخطة بما يناسب الوقت المتاح."
       }
     ],
     best: 2
   },
   {
     theme: "relationship-management",
-    setting: "بعد لقاء فريق المبادرة",
-    title: "توزيع العمل من جديد",
-    story: "في مبادرة طلابية، تكرر أن تُعِدّ زميلتان المواد نفسها فيما تبقى مهمة أخرى دون متابعة. إحداهما شعرت بأن جهدها ضاع، والأخرى تقول إن الرسائل لم تحدد صاحبة كل مهمة. أمامكن أسبوع قبل الفعالية.",
-    cue: "«حسبت إن التصميم عليّ. ما أدري متى اتفقنا على غير كذا.»",
-    question: "كيف تعالجين سبب التوتر مع الحفاظ على تعاون الفريق؟",
+    setting: "عمل متكرر مع صديقة",
+    title: "موعد يتأخر كل مرة",
+    story: "تأخرت صديقتكِ في إرسال أجزائها في أكثر من مقرر، فبقي تنسيق العمل عليكِ في آخر لحظة. أمامكما أسبوع قبل التكليف التالي، وترغبين في معالجة تكرار التأخير.",
+    question: "كيف تحمين سير العمل وعلاقتكما في الوقت نفسه؟",
     skill: "إدارة العلاقات",
-    takeaway: "اسمعي الأطراف المعنية واتفقي معها على خطوة واضحة يمكن متابعتها.",
+    takeaway: "وضّحي أثر المشكلة واتّفقي مع الطرف الآخر على خطوة قابلة للمتابعة.",
     options: [
       {
-        action: "أرسل جدولًا مقترحًا للمهام، وأطلب من كل واحدة تأكيد دورها في المجموعة.",
-        label: "جدول وتأكيد مكتوب",
-        effect: "الجدول يوضح المسؤوليات. وقد تؤكد الزميلتان أدوارهما من غير أن يتضح للفريق كيف تكرر الالتباس أو كيف أثر فيهما.",
-        compare: "ينظم العمل المقبل، لكنه يترك أثر التداخل السابق دون نقاش."
+        action: "أضع موعدًا داخليًا مبكرًا للجميع وأرسل تذكيرًا قبل الموعد بيوم.",
+        label: "موعد موحّد وتذكير",
+        effect: "تضيفين وقتًا احتياطيًا للتنسيق، وقد يستمر التأخير إذا كان سببه عائقًا لا يحله التذكير.",
+        compare: "يفيد في التنظيم، لكن سبب تكرار التأخير قد يظل قائمًا."
       },
       {
-        action: "أجمع المعنيّات لدقائق، ونراجع أين تداخل العمل ثم نتفق على المسؤوليات.",
-        label: "مراجعة واتفاق مشترك",
-        effect: "تسمعين كيف فهمت كل زميلة دورها وتعترفين بالجهد الذي تكرر، ثم تتفقن على توزيع يمكن للفريق الرجوع إليه. والأسبوع المتبقي يتيح هذا الحوار.",
-        compare: "هذا أنسب لأن التداخل تكرر وأثر في التعاون، والوقت يسمح بسماع الأطراف والاتفاق."
+        action: "أوضح لها أثر التأخير وأسمع ما يعطّلها، ثم نتفق على موعد مبكر.",
+        label: "حوار واتفاق مشترك",
+        effect: "يفهم كل طرف أثر التأخير وما يعطّل العمل. ويساعد الاتفاق المشترك على اختيار موعد تستطيعان الالتزام به.",
+        compare: "يعالج تكرار التأخير بالحديث عن أثره وسبب حدوثه والاتفاق على حل."
       },
       {
-        action: "أقابل كل زميلة على حدة، ثم أوزع المهام وفق ما فهمته من الحديثين.",
-        label: "حديثان منفصلان",
-        effect: "قد يكون الحديث الفردي مريحًا ويكشف تفاصيل مفيدة. توزيعك للمهام بعدها يترك الاتفاق معتمدًا على تفسيرك وحدك لما حدث.",
-        compare: "يفتح مساحة للحديث، بينما تبقى المسؤوليات قرارًا تتخذينه وحدك."
+        action: "أعيد توزيع المهام بحيث أستطيع تنسيق الملف قبل أن ترسل جزءها.",
+        label: "تعديل توزيع العمل",
+        effect: "قد يقلّ اعتماد التنسيق على توقيت إرسالها، لكن ذلك قد ينقل العبء إلى طرف آخر ويؤجل النقاش بينكما.",
+        compare: "يخفف أثر التأخير على التنسيق ويترك نمط العمل بينكما بلا اتفاق."
       }
     ],
     best: 1
@@ -128,6 +126,8 @@ const scenes = [
 ];
 
 const byId = (id) => document.getElementById(id);
+const presentation = byId("presentation");
+const stage = byId("stage");
 const intro = byId("intro");
 const activity = byId("activity");
 const summary = byId("summary");
@@ -136,68 +136,93 @@ const feedback = byId("feedback");
 const choices = byId("choices");
 const steps = byId("steps");
 const alternatives = byId("alternatives");
+const previous = byId("previous");
+const next = byId("next");
+const sound = byId("sound");
+const fullscreen = byId("fullscreen");
 const ordinals = ["١", "٢", "٣", "٤"];
 const letters = ["أ", "ب", "ج"];
+const answers = Array(scenes.length).fill(null);
+let screen = -1;
 
-let sceneIndex = 0;
-let decisionMade = false;
+function focusView(element) {
+  element.focus({ preventScroll: true });
+  element.scrollIntoView({ block: "nearest", behavior: "instant" });
+}
 
-function openSection(section, title) {
-  for (const screen of [intro, activity, summary]) {
-    screen.hidden = screen !== section;
-  }
+function showScreen(index) {
+  screen = index;
+  intro.hidden = index !== -1;
+  activity.hidden = index < 0 || index >= scenes.length;
+  summary.hidden = index !== scenes.length;
+  stage.dataset.screen = !activity.hidden ? "activity" : !summary.hidden ? "summary" : "intro";
+  byId("navigation").hidden = !intro.hidden;
+  byId("credits").hidden = !activity.hidden;
+  if (!activity.hidden) renderScene();
+  if (!summary.hidden) showSummary();
+  renderProgress();
+  presentation.scrollTop = 0;
   window.scrollTo({ top: 0, behavior: "instant" });
-  title.focus({ preventScroll: true });
+  const title = !activity.hidden
+    ? answers[index] === null ? "scene-title" : "feedback-title"
+    : !summary.hidden ? "summary-title" : "intro-title";
+  if (title === "feedback-title") focusView(byId(title));
+  else byId(title).focus({ preventScroll: true });
 }
 
 function renderProgress() {
-  byId("progress-label").textContent = `الموقف ${ordinals[sceneIndex]} من ٤`;
+  if (!activity.hidden) {
+    byId("progress-label").textContent = `الموقف ${ordinals[screen]} من ٤`;
+  } else if (!summary.hidden) {
+    byId("progress-label").textContent = "الخلاصة";
+  }
   steps.replaceChildren(...scenes.map((_, index) => {
     const item = document.createElement("li");
     item.textContent = ordinals[index];
-    item.className = index < sceneIndex || (index === sceneIndex && decisionMade) ? "completed" : "";
-    if (index === sceneIndex) item.setAttribute("aria-current", "step");
-    const status = index < sceneIndex || (index === sceneIndex && decisionMade) ? "، تم" : "";
+    if (answers[index] !== null) item.className = "completed";
+    if (index === screen) item.setAttribute("aria-current", "step");
+    const status = answers[index] !== null ? "، تم" : "";
     item.setAttribute("aria-label", `الموقف ${ordinals[index]}${status}`);
     return item;
   }));
+  previous.disabled = screen < 0;
+  next.disabled = screen === scenes.length || (screen >= 0 && answers[screen] === null);
+  next.hidden = screen === scenes.length;
+  byId("next-label").textContent = screen === scenes.length - 1 ? "الخلاصة" : "التالي";
 }
 
 function renderScene() {
-  const scene = scenes[sceneIndex];
-  decisionMade = false;
-  renderProgress();
-  byId("workspace").dataset.theme = scene.theme;
+  const scene = scenes[screen];
+  activity.dataset.theme = scene.theme;
   byId("setting").textContent = scene.setting;
   byId("scene-title").textContent = scene.title;
   byId("story").textContent = scene.story;
-  byId("cue").textContent = scene.cue;
+  const cue = byId("cue");
+  cue.textContent = scene.cue || "";
+  cue.hidden = !scene.cue;
   byId("question").textContent = scene.question;
   choices.replaceChildren(...scene.options.map((option, index) => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "choice";
-
     const letter = document.createElement("span");
     letter.className = "option-letter";
     letter.textContent = letters[index];
     letter.setAttribute("aria-hidden", "true");
-
     const action = document.createElement("span");
     action.textContent = option.action;
-
-    const arrow = document.createElement("span");
-    arrow.className = "choice-arrow";
-    arrow.textContent = "←";
-    arrow.setAttribute("aria-hidden", "true");
-
-    button.append(letter, action, arrow);
-    button.addEventListener("click", () => revealDecision(index));
+    button.append(letter, action);
+    button.addEventListener("click", () => {
+      if (answers[screen] !== null) return;
+      answers[screen] = index;
+      renderAnswer();
+      renderProgress();
+      focusView(byId("feedback-title"));
+      play("answer");
+    });
     return button;
   }));
-  choicesPanel.hidden = false;
-  feedback.hidden = true;
-  openSection(activity, byId("scene-title"));
+  renderAnswer();
 }
 
 function bestTag() {
@@ -207,39 +232,30 @@ function bestTag() {
   return tag;
 }
 
-function revealDecision(selectedIndex) {
-  if (decisionMade) return;
-  decisionMade = true;
-  const scene = scenes[sceneIndex];
+function renderAnswer() {
+  const selectedIndex = answers[screen];
+  choicesPanel.hidden = selectedIndex !== null;
+  feedback.hidden = selectedIndex === null;
+  if (selectedIndex === null) return;
+  const scene = scenes[screen];
   const selected = scene.options[selectedIndex];
   byId("feedback-skill").textContent = scene.skill;
   const selectedAction = byId("selected-action");
   selectedAction.textContent = `قرارك · ${selected.label}`;
   if (selectedIndex === scene.best) selectedAction.append(bestTag());
   byId("selected-impact").textContent = selected.effect;
-  alternatives.replaceChildren(...scene.options.map((option, index) => {
-    if (index === selectedIndex) return null;
+  alternatives.replaceChildren(...scene.options.flatMap((option, index) => {
+    if (index === selectedIndex) return [];
     const row = document.createElement("li");
     const label = document.createElement("strong");
     label.textContent = option.label;
-
-    if (index === scene.best) {
-      label.append(bestTag());
-    }
-
+    if (index === scene.best) label.append(bestTag());
     const explanation = document.createElement("span");
     explanation.className = "comparison";
     explanation.textContent = option.compare;
     row.append(label, explanation);
-    return row;
-  }).filter(Boolean));
-  byId("next-label").textContent = sceneIndex === scenes.length - 1 ? "إلى الخلاصة" : "الموقف التالي";
-  renderProgress();
-  feedback.hidden = false;
-  choicesPanel.hidden = true;
-  const title = byId("feedback-title");
-  title.focus({ preventScroll: true });
-  title.scrollIntoView({ block: "nearest", behavior: "instant" });
+    return [row];
+  }));
 }
 
 function showSummary() {
@@ -253,25 +269,161 @@ function showSummary() {
     card.append(title, takeaway);
     return card;
   }));
-  openSection(summary, byId("summary-title"));
 }
 
-byId("start").addEventListener("click", () => {
-  sceneIndex = 0;
-  renderScene();
-});
-byId("next").addEventListener("click", () => {
-  if (!decisionMade) return;
-  sceneIndex += 1;
-  if (sceneIndex === scenes.length) {
-    decisionMade = false;
-    showSummary();
-    return;
-  }
-  renderScene();
+function goForward() {
+  if (screen >= scenes.length || (screen >= 0 && answers[screen] === null)) return;
+  const nextScreen = screen + 1;
+  showScreen(nextScreen);
+  play(nextScreen === scenes.length ? "finish" : "slide");
+}
+
+function goBack() {
+  if (screen < 0) return;
+  showScreen(screen - 1);
+  play("slide");
+}
+
+byId("start").addEventListener("click", goForward);
+previous.addEventListener("click", goBack);
+next.addEventListener("click", goForward);
+byId("change").addEventListener("click", () => {
+  const selectedIndex = answers[screen];
+  answers[screen] = null;
+  renderAnswer();
+  renderProgress();
+  focusView(choices.children[selectedIndex]);
 });
 byId("restart").addEventListener("click", () => {
-  sceneIndex = 0;
-  renderScene();
+  answers.fill(null);
+  showScreen(0);
+  play("slide");
 });
+
+const AudioEngine = window.AudioContext || window.webkitAudioContext;
+const tones = {
+  slide: [440],
+  answer: [523.25, 659.25],
+  finish: [523.25, 659.25, 783.99]
+};
+let audio;
+let soundEnabled = false;
+let soundVersion = 0;
+const playing = new Set();
+
+function setSound(enabled) {
+  soundEnabled = enabled;
+  sound.setAttribute("aria-pressed", String(enabled));
+  sound.title = enabled ? "كتم الصوت" : "تشغيل الصوت";
+}
+
+async function play(cue) {
+  if (!soundEnabled || !audio) return;
+  const version = soundVersion;
+  try {
+    if (audio.state !== "running") await audio.resume();
+    if (!soundEnabled || version !== soundVersion || audio.state !== "running") return;
+    tones[cue].forEach((pitch, index) => {
+      const time = audio.currentTime + index * 0.09;
+      const oscillator = audio.createOscillator();
+      const volume = audio.createGain();
+      oscillator.type = "sine";
+      oscillator.frequency.value = pitch;
+      volume.gain.setValueAtTime(0, time);
+      volume.gain.linearRampToValueAtTime(0.065, time + 0.014);
+      volume.gain.exponentialRampToValueAtTime(0.001, time + 0.16);
+      oscillator.connect(volume).connect(audio.destination);
+      playing.add(oscillator);
+      oscillator.addEventListener("ended", () => {
+        playing.delete(oscillator);
+        oscillator.disconnect();
+        volume.disconnect();
+      }, { once: true });
+      oscillator.start(time);
+      oscillator.stop(time + 0.17);
+    });
+  } catch {
+    setSound(false);
+    byId("notice").textContent = "تعذّر تشغيل الصوت في هذا المتصفح.";
+  }
+}
+
+sound.addEventListener("click", () => {
+  soundVersion += 1;
+  if (soundEnabled) {
+    setSound(false);
+    playing.forEach((oscillator) => oscillator.stop());
+    playing.clear();
+    return;
+  }
+  try {
+    audio ||= new AudioEngine();
+    setSound(true);
+    play("answer");
+  } catch {
+    setSound(false);
+    byId("notice").textContent = "تعذّر تشغيل الصوت في هذا المتصفح.";
+  }
+});
+
+const nativeFullscreen = () => document.fullscreenElement || document.webkitFullscreenElement;
+let expanded = false;
+let fullscreenPending = false;
+
+function updateFullscreen() {
+  const active = Boolean(nativeFullscreen()) || expanded;
+  fullscreen.setAttribute("aria-pressed", String(active));
+  const label = active ? "خروج من ملء الشاشة" : "ملء الشاشة";
+  fullscreen.title = label;
+  fullscreen.querySelector(".tool-label").textContent = label;
+}
+
+function setExpanded(value) {
+  expanded = value;
+  presentation.classList.toggle("expanded", value);
+  document.body.classList.toggle("expanded-body", value);
+  updateFullscreen();
+}
+
+fullscreen.addEventListener("click", async () => {
+  if (fullscreenPending) return;
+  fullscreenPending = true;
+  try {
+    if (nativeFullscreen()) {
+      const exit = document.exitFullscreen || document.webkitExitFullscreen;
+      await exit.call(document);
+    } else if (expanded) {
+      setExpanded(false);
+    } else {
+      const enter = presentation.requestFullscreen || presentation.webkitRequestFullscreen;
+      if (enter) await enter.call(presentation);
+      else setExpanded(true);
+    }
+  } catch {
+    if (!nativeFullscreen()) setExpanded(true);
+  } finally {
+    fullscreenPending = false;
+    updateFullscreen();
+  }
+});
+document.addEventListener("fullscreenchange", updateFullscreen);
+document.addEventListener("webkitfullscreenchange", updateFullscreen);
+document.addEventListener("keydown", (event) => {
+  if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+  if (event.key === "Escape" && expanded) {
+    setExpanded(false);
+    return;
+  }
+  if (event.repeat || screen < 0) return;
+  if (event.key === "ArrowLeft") {
+    event.preventDefault();
+    goForward();
+  } else if (event.key === "ArrowRight") {
+    event.preventDefault();
+    goBack();
+  }
+});
+
 byId("start").disabled = false;
+sound.disabled = !AudioEngine;
+fullscreen.disabled = false;
